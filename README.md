@@ -9,6 +9,7 @@ docker run -d --name siab -p 4200:4200 \
   -e SIAB_GROUPID=1001 \
   -e SIAB_SERVICE="/:SSH:192.168.31.155" \
   -e SIAB_SSL=false \
+  --restart unless-stopped \
   sspreitzer/shellinabox:latest
 ´´´
 
